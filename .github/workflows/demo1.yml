@@ -13,6 +13,8 @@ on:
       - master
       - 'dev*'       # dev-new dev-this-is-new
       - 'feature/**' # feature/new feature/new/button
+    paths-ignore:
+      - '.github/workflows/*'
 jobs:
   deploy:
     runs-on: ubuntu-latest
